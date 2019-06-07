@@ -1,0 +1,6 @@
+framework module Pods_Practice_Swift_AppTests {
+  umbrella header "Pods-Practice-Swift-AppTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
