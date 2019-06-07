@@ -66,6 +66,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="60a-qi-9Ui">
                                 <rect key="frame" x="159" y="180.5" width="57" height="30"/>
                                 <state key="normal" title="P2P Pay"/>
+                                <connections>
+                                    <action selector="didTappedP2P:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AQq-bb-A1d"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

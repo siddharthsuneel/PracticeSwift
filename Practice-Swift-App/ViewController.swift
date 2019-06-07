@@ -119,6 +119,18 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func didTappedP2P(_ sender: Any) {
+        let vc = P2PAddBeneficiaryVC.newInstance
+        vc.viewTpe = .addBeneficiary
+        
+        self.addChild(vc)
+        self.view.addSubview(vc.view)
+//        present(vc, animated: true) {
+//
+//        }
+    }
+    
+    
 }
 
 

@@ -13,7 +13,7 @@
         <!--Beneficiary PopupVC-->
         <scene sceneID="3PO-xL-8YE">
             <objects>
-                <viewController id="FsY-uw-V5d" customClass="P2PBeneficiaryPopupVC" customModule="Practice_Swift_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="P2PBeneficiaryPopupVC" modalPresentationStyle="overCurrentContext" id="FsY-uw-V5d" customClass="P2PBeneficiaryPopupVC" customModule="Practice_Swift_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bKg-Sm-SlB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -22,10 +22,10 @@
                                 <rect key="frame" x="0.0" y="315" width="375" height="352"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hb2-SM-191">
-                                        <rect key="frame" x="316" y="20" width="44" height="44"/>
+                                        <rect key="frame" x="300" y="5" width="60" height="60"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="44" id="O9T-Vu-A7a"/>
-                                            <constraint firstAttribute="height" constant="44" id="yEm-w1-BZj"/>
+                                            <constraint firstAttribute="width" constant="60" id="O9T-Vu-A7a"/>
+                                            <constraint firstAttribute="height" constant="60" id="yEm-w1-BZj"/>
                                         </constraints>
                                         <state key="normal" image="icCloseP2p"/>
                                         <state key="highlighted" image="crossBtnIcon"/>
@@ -132,7 +132,7 @@
                                     <constraint firstAttribute="trailing" secondItem="2b0-0s-S5K" secondAttribute="trailing" id="dMj-XT-TiT"/>
                                     <constraint firstAttribute="bottom" secondItem="2b0-0s-S5K" secondAttribute="bottom" constant="15" id="dwb-tX-109"/>
                                     <constraint firstItem="2b0-0s-S5K" firstAttribute="top" secondItem="TcE-9Y-erL" secondAttribute="top" constant="25" id="fZ2-Ge-3WW"/>
-                                    <constraint firstItem="Hb2-SM-191" firstAttribute="top" secondItem="TcE-9Y-erL" secondAttribute="top" constant="20" id="iJa-V4-IuI"/>
+                                    <constraint firstItem="Hb2-SM-191" firstAttribute="top" secondItem="TcE-9Y-erL" secondAttribute="top" constant="5" id="iJa-V4-IuI"/>
                                     <constraint firstAttribute="trailing" secondItem="Hb2-SM-191" secondAttribute="trailing" constant="15" id="y0y-5o-E6r"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
@@ -168,7 +168,7 @@
         <!--ConfirmOTPVC-->
         <scene sceneID="hgB-x7-9kn">
             <objects>
-                <viewController id="Rxa-r4-qc0" customClass="P2PConfirmOTPVC" customModule="Practice_Swift_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="P2PConfirmOTPVC" id="Rxa-r4-qc0" customClass="P2PConfirmOTPVC" customModule="Practice_Swift_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WRx-XN-dzu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -362,31 +362,31 @@ as a beneficiary</string>
         <!--Add BeneficiaryVC-->
         <scene sceneID="ES3-Eh-XUd">
             <objects>
-                <viewController id="xHa-gY-sTe" customClass="P2PAddBeneficiaryVC" customModule="Practice_Swift_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="P2PAddBeneficiaryVC" id="xHa-gY-sTe" customClass="P2PAddBeneficiaryVC" customModule="Practice_Swift_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="D2d-DA-GOu">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1100"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4JE-4W-qOw">
-                                <rect key="frame" x="0.0" y="-291.5" width="375" height="958.5"/>
+                                <rect key="frame" x="0.0" y="51.5" width="375" height="1048.5"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="TYc-0D-AzD" userLabel="SuperContainerStackView">
-                                        <rect key="frame" x="0.0" y="20" width="375" height="938.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="TYc-0D-AzD" userLabel="SuperContainerStackView">
+                                        <rect key="frame" x="0.0" y="20" width="375" height="1028.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="5QE-HW-RWO" userLabel="AddBeneficiaryStackView">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="312"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="342"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="5vJ-hE-59i" userLabel="TopStackView">
-                                                        <rect key="frame" x="3" y="0.0" width="369.5" height="107"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="5vJ-hE-59i" userLabel="TopStackView">
+                                                        <rect key="frame" x="3" y="0.0" width="369.5" height="137"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please add Anish J Abraham as a beneficiary to complete this payment" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ceL-bH-tHO">
-                                                                <rect key="frame" x="15" y="0.0" width="294.5" height="41"/>
+                                                                <rect key="frame" x="15" y="0.0" width="294.5" height="61"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="As per RBI guidelines, to send more than ₹10,000 per month to any Paytm Wallet, the receiver must be your Paytm beneficiary" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJr-hg-Lzs">
-                                                                <rect key="frame" x="15" y="46" width="339.5" height="61"/>
+                                                                <rect key="frame" x="15" y="76" width="339.5" height="61"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -398,10 +398,10 @@ as a beneficiary</string>
                                                         <edgeInsets key="layoutMargins" top="0.0" left="15" bottom="0.0" right="15"/>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gfy-tW-4br" userLabel="BeneficiaryStackView">
-                                                        <rect key="frame" x="0.0" y="132" width="375" height="100"/>
+                                                        <rect key="frame" x="20" y="162" width="335" height="100"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YUr-so-zvg">
-                                                                <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="335" height="100"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BENEFICIARY DETAILS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLv-ov-SfG">
                                                                         <rect key="frame" x="15" y="3.5" width="174.5" height="20.5"/>
@@ -436,7 +436,7 @@ as a beneficiary</string>
                                                         </subviews>
                                                     </stackView>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FsB-oN-ma6">
-                                                        <rect key="frame" x="86" y="257" width="203" height="55"/>
+                                                        <rect key="frame" x="20" y="287" width="335" height="55"/>
                                                         <color key="backgroundColor" red="0.0" green="0.72549019609999998" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="55" id="HdB-uE-o2z"/>
@@ -452,13 +452,19 @@ as a beneficiary</string>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
-                                                            <action selector="footerButtonAction:" destination="FsY-uw-V5d" eventType="touchUpInside" id="nF9-wi-92c"/>
+                                                            <action selector="addBeneficiaryAction:" destination="xHa-gY-sTe" eventType="touchUpInside" id="XrA-oy-n7a"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="FsB-oN-ma6" firstAttribute="leading" secondItem="5QE-HW-RWO" secondAttribute="leading" constant="20" id="7BJ-re-QMm"/>
+                                                    <constraint firstAttribute="trailing" secondItem="gfy-tW-4br" secondAttribute="trailing" constant="20" id="BVF-hN-stz"/>
+                                                    <constraint firstAttribute="trailing" secondItem="FsB-oN-ma6" secondAttribute="trailing" constant="20" id="VWr-GB-0Su"/>
+                                                    <constraint firstItem="gfy-tW-4br" firstAttribute="leading" secondItem="5QE-HW-RWO" secondAttribute="leading" constant="20" id="tJa-do-SZc"/>
+                                                </constraints>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="36i-8i-dnb" userLabel="OTPView">
-                                                <rect key="frame" x="0.0" y="312" width="375" height="330"/>
+                                                <rect key="frame" x="0.0" y="362" width="375" height="330"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CHW-x7-Wxn">
                                                         <rect key="frame" x="25" y="25" width="261" height="41"/>
@@ -468,7 +474,7 @@ as a beneficiary</string>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzJ-sO-ktw">
+                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzJ-sO-ktw">
                                                         <rect key="frame" x="306" y="20" width="44" height="44"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="44" id="HDV-1y-gNV"/>
@@ -583,7 +589,7 @@ as a beneficiary</string>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
-                                                            <action selector="confirmButtonAction:" destination="Rxa-r4-qc0" eventType="touchUpInside" id="bDm-3s-WVx"/>
+                                                            <action selector="confirmOTPButton:" destination="xHa-gY-sTe" eventType="touchUpInside" id="MAk-rr-OEC"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -613,7 +619,7 @@ as a beneficiary</string>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hUa-R1-new" userLabel="ResponseStackView">
-                                                <rect key="frame" x="0.0" y="642" width="375" height="276.5"/>
+                                                <rect key="frame" x="0.0" y="712" width="375" height="276.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yXR-KK-cJt" userLabel="ResponseTitleStackView">
                                                         <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
@@ -654,12 +660,15 @@ as a beneficiary</string>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <action selector="footerButtonAction:" destination="FsY-uw-V5d" eventType="touchUpInside" id="xXn-Er-ncG"/>
+                                                                    <action selector="retryButtonAction:" destination="xHa-gY-sTe" eventType="touchUpInside" id="gID-SU-RGt"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pbl-wn-8xB">
                                                                 <rect key="frame" x="20" y="75" width="335" height="30"/>
                                                                 <state key="normal" title="Button"/>
+                                                                <connections>
+                                                                    <action selector="cancelButtonAction:" destination="xHa-gY-sTe" eventType="touchUpInside" id="Af4-Jt-YOQ"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <edgeInsets key="layoutMargins" top="5" left="20" bottom="5" right="20"/>
@@ -698,7 +707,7 @@ as a beneficiary</string>
                                                 </subviews>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XRD-j0-RCH" userLabel="BottomStripView">
-                                                <rect key="frame" x="0.0" y="918.5" width="375" height="20"/>
+                                                <rect key="frame" x="0.0" y="1008.5" width="375" height="20"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z8G-O4-Q34">
                                                         <rect key="frame" x="0.0" y="10" width="375" height="10"/>
@@ -723,12 +732,26 @@ as a beneficiary</string>
                                             <constraint firstAttribute="trailing" secondItem="5QE-HW-RWO" secondAttribute="trailing" id="pwQ-bx-mmG"/>
                                         </constraints>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pon-i0-Ird">
+                                        <rect key="frame" x="305" y="15" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="coK-Dg-2G1"/>
+                                            <constraint firstAttribute="width" constant="60" id="t8N-Dq-McT"/>
+                                        </constraints>
+                                        <state key="normal" image="icCloseP2p"/>
+                                        <state key="highlighted" image="crossBtnIcon"/>
+                                        <connections>
+                                            <action selector="dismissAction:" destination="xHa-gY-sTe" eventType="touchUpInside" id="IPc-bf-IsF"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="TYc-0D-AzD" firstAttribute="leading" secondItem="4JE-4W-qOw" secondAttribute="leading" id="16q-ON-lTp"/>
                                     <constraint firstAttribute="trailing" secondItem="TYc-0D-AzD" secondAttribute="trailing" id="IFM-vq-NKV"/>
+                                    <constraint firstAttribute="trailing" secondItem="pon-i0-Ird" secondAttribute="trailing" constant="10" id="Z2G-xm-eb3"/>
                                     <constraint firstItem="TYc-0D-AzD" firstAttribute="top" secondItem="4JE-4W-qOw" secondAttribute="top" constant="20" id="djf-iZ-bLb"/>
+                                    <constraint firstItem="pon-i0-Ird" firstAttribute="top" secondItem="4JE-4W-qOw" secondAttribute="top" constant="15" id="nzK-Rt-9en"/>
                                     <constraint firstAttribute="bottom" secondItem="TYc-0D-AzD" secondAttribute="bottom" id="szS-0Y-TwZ"/>
                                 </constraints>
                             </view>
@@ -741,10 +764,32 @@ as a beneficiary</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BUa-Zt-xxs"/>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="1100"/>
+                    <connections>
+                        <outlet property="addBeneficiaryButton" destination="FsB-oN-ma6" id="35c-CZ-mY2"/>
+                        <outlet property="addBeneficiaryStackView" destination="5QE-HW-RWO" id="njv-Jr-K4x"/>
+                        <outlet property="beneficiaryDetailStackView" destination="gfy-tW-4br" id="Wng-Sa-UaQ"/>
+                        <outlet property="beneficiaryNameLbl" destination="oc7-wC-iPJ" id="nQH-NY-5cM"/>
+                        <outlet property="beneficiaryPhoneLbl" destination="POE-h7-0u8" id="KAE-44-dfa"/>
+                        <outlet property="bottomStripView" destination="XRD-j0-RCH" id="9bK-nu-yTh"/>
+                        <outlet property="cancelButton" destination="Pbl-wn-8xB" id="3Kw-bb-pdo"/>
+                        <outlet property="impNoteLbl" destination="9p1-H1-dos" id="52e-06-U5F"/>
+                        <outlet property="loaderView" destination="dFA-Zb-wDm" id="BhV-Qk-GmV"/>
+                        <outlet property="msgLbl" destination="tjc-t1-hMC" id="L0g-Ay-lii"/>
+                        <outlet property="otpView" destination="36i-8i-dnb" id="VrZ-sM-NH9"/>
+                        <outlet property="paymentSettingLbl" destination="kzf-zJ-3G4" id="erc-8y-Tng"/>
+                        <outlet property="respImgView" destination="Qc9-Zd-EWl" id="yLo-sH-qWb"/>
+                        <outlet property="respTitleLbl" destination="6SO-Zh-FoV" id="zyv-e0-ug5"/>
+                        <outlet property="responseStackView" destination="hUa-R1-new" id="pzv-0x-DLo"/>
+                        <outlet property="retryButton" destination="c8c-2t-nwm" id="8so-Af-66c"/>
+                        <outlet property="subtitleLbl" destination="gJr-hg-Lzs" id="PGi-2g-ysQ"/>
+                        <outlet property="viewBottom" destination="c0S-Ey-m8u" id="MRD-9N-Thu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gv0-k3-9Ch" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="318" y="-929"/>
+            <point key="canvasLocation" x="318" y="-781"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="66R-Tc-qsG">
@@ -758,13 +803,13 @@ as a beneficiary</string>
                                 <rect key="frame" x="0.0" y="110.5" width="375" height="556.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="84x-lP-Jhy" userLabel="SuperStackView">
-                                        <rect key="frame" x="0.0" y="20" width="375" height="536.5"/>
+                                        <rect key="frame" x="16" y="20" width="343" height="536.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="i8X-Pi-n4s" userLabel="TitleStackView">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="20.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbb-0u-Ykg">
-                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="20.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="20.5"/>
                                                         <edgeInsets key="layoutMargins" top="15" left="16" bottom="10" right="80"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
@@ -773,10 +818,10 @@ as a beneficiary</string>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="n3n-gz-U1F" userLabel="SubtitleStackView">
-                                                <rect key="frame" x="0.0" y="20.5" width="375" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="20.5" width="343" height="20.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W9G-9Z-Xru">
-                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="20.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="20.5"/>
                                                         <edgeInsets key="layoutMargins" top="40" left="16" bottom="10" right="80"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
@@ -785,25 +830,25 @@ as a beneficiary</string>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="sk4-Qu-Z3g" userLabel="BeneficiaryStackView">
-                                                <rect key="frame" x="0.0" y="41" width="375" height="115"/>
+                                                <rect key="frame" x="0.0" y="41" width="343" height="115"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BFf-Pv-Qe7">
-                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="115"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="115"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BENEFICIARY DETAILS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hqj-bI-6Q5">
-                                                                <rect key="frame" x="15" y="15" width="174.5" height="24"/>
+                                                                <rect key="frame" x="10" y="15" width="174.5" height="24"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="+91 9986510761" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IGZ-s6-ndt">
-                                                                <rect key="frame" x="15" y="49" width="172.5" height="25.5"/>
+                                                                <rect key="frame" x="10" y="49" width="172.5" height="25.5"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Anish J Abraham" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A38-xP-4jl">
-                                                                <rect key="frame" x="15" y="84.5" width="129.5" height="20.5"/>
+                                                                <rect key="frame" x="10" y="84.5" width="129.5" height="20.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -816,7 +861,7 @@ as a beneficiary</string>
                                                             <constraint firstAttribute="bottom" secondItem="A38-xP-4jl" secondAttribute="bottom" constant="10" id="KGl-Ko-KeU"/>
                                                             <constraint firstItem="hqj-bI-6Q5" firstAttribute="top" secondItem="BFf-Pv-Qe7" secondAttribute="top" constant="15" id="TXX-31-1sf"/>
                                                             <constraint firstItem="A38-xP-4jl" firstAttribute="leading" secondItem="IGZ-s6-ndt" secondAttribute="leading" id="W0C-M3-g5C"/>
-                                                            <constraint firstItem="hqj-bI-6Q5" firstAttribute="leading" secondItem="BFf-Pv-Qe7" secondAttribute="leading" constant="15" id="n95-9Z-C0U"/>
+                                                            <constraint firstItem="hqj-bI-6Q5" firstAttribute="leading" secondItem="BFf-Pv-Qe7" secondAttribute="leading" constant="10" id="n95-9Z-C0U"/>
                                                             <constraint firstItem="A38-xP-4jl" firstAttribute="top" secondItem="IGZ-s6-ndt" secondAttribute="bottom" constant="10" id="rDC-IE-9fh"/>
                                                             <constraint firstAttribute="height" priority="999" constant="115" id="rr7-uL-9LI"/>
                                                         </constraints>
@@ -824,10 +869,10 @@ as a beneficiary</string>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="2Yt-wV-djG" userLabel="ActionButtonStackView">
-                                                <rect key="frame" x="0.0" y="156" width="375" height="110"/>
+                                                <rect key="frame" x="0.0" y="156" width="343" height="110"/>
                                                 <subviews>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdY-Mg-Hx8">
-                                                        <rect key="frame" x="20" y="5" width="335" height="55"/>
+                                                        <rect key="frame" x="20" y="5" width="303" height="55"/>
                                                         <color key="backgroundColor" red="0.0" green="0.72549019609999998" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="55" id="zuq-Ra-7sO"/>
@@ -847,59 +892,59 @@ as a beneficiary</string>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VL0-Bg-iaO">
-                                                        <rect key="frame" x="20" y="75" width="335" height="30"/>
+                                                        <rect key="frame" x="20" y="75" width="303" height="30"/>
                                                         <state key="normal" title="Button"/>
                                                     </button>
                                                 </subviews>
                                                 <edgeInsets key="layoutMargins" top="5" left="20" bottom="5" right="20"/>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bNv-DS-MZc" userLabel="OTPContainerStackView">
-                                                <rect key="frame" x="0.0" y="266" width="375" height="104.5"/>
+                                                <rect key="frame" x="0.0" y="266" width="343" height="104.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6 Digit OTP has been sent to XX 9876" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A1A-Ia-OF7">
-                                                        <rect key="frame" x="16" y="5" width="343" height="14.5"/>
+                                                        <rect key="frame" x="16" y="5" width="311" height="14.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                         <color key="textColor" red="0.54509803921568623" green="0.65098039215686276" blue="0.75686274509803919" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="GRD-Q0-cTz" userLabel="OTPStackView">
-                                                        <rect key="frame" x="16" y="19.5" width="343" height="50"/>
+                                                        <rect key="frame" x="16" y="19.5" width="311" height="50"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CQd-bK-N8R">
-                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="50"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="311" height="50"/>
                                                                 <subviews>
                                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yzG-ww-nLO">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="46.5" height="50"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="42.5" height="50"/>
                                                                         <nil key="textColor"/>
                                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                                     </textField>
                                                                     <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gZG-Qb-uhb">
-                                                                        <rect key="frame" x="58.5" y="0.0" width="47" height="50"/>
+                                                                        <rect key="frame" x="54.5" y="0.0" width="42" height="50"/>
                                                                         <nil key="textColor"/>
                                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                                     </textField>
                                                                     <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d9J-iX-t8s">
-                                                                        <rect key="frame" x="117.5" y="0.0" width="46.5" height="50"/>
+                                                                        <rect key="frame" x="108.5" y="0.0" width="42.5" height="50"/>
                                                                         <nil key="textColor"/>
                                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                                     </textField>
                                                                     <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8c1-sg-deI">
-                                                                        <rect key="frame" x="176" y="0.0" width="46.5" height="50"/>
+                                                                        <rect key="frame" x="163" y="0.0" width="42.5" height="50"/>
                                                                         <nil key="textColor"/>
                                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                                     </textField>
                                                                     <textField opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cqB-lx-1gA">
-                                                                        <rect key="frame" x="234.5" y="0.0" width="47" height="50"/>
+                                                                        <rect key="frame" x="217.5" y="0.0" width="42" height="50"/>
                                                                         <nil key="textColor"/>
                                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                                     </textField>
                                                                     <textField opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kZq-C4-pF3">
-                                                                        <rect key="frame" x="296.5" y="0.0" width="46.5" height="50"/>
+                                                                        <rect key="frame" x="268.5" y="0.0" width="42.5" height="50"/>
                                                                         <nil key="textColor"/>
                                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -936,23 +981,23 @@ as a beneficiary</string>
                                                         </subviews>
                                                     </stackView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQo-Ge-9Sl">
-                                                        <rect key="frame" x="16" y="69.5" width="343" height="30"/>
+                                                        <rect key="frame" x="16" y="69.5" width="311" height="30"/>
                                                         <state key="normal" title="Resend OTP"/>
                                                     </button>
                                                 </subviews>
                                                 <edgeInsets key="layoutMargins" top="5" left="16" bottom="5" right="16"/>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pw0-Xa-sNt" userLabel="ResponseTitleStackView">
-                                                <rect key="frame" x="0.0" y="370.5" width="375" height="56"/>
+                                                <rect key="frame" x="0.0" y="370.5" width="343" height="56"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p01-Qe-Eav">
-                                                        <rect key="frame" x="16" y="10" width="307" height="36"/>
+                                                        <rect key="frame" x="16" y="10" width="275" height="36"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rz8-J8-VIb">
-                                                        <rect key="frame" x="323" y="10" width="36" height="36"/>
+                                                        <rect key="frame" x="291" y="10" width="36" height="36"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="36" id="OfX-iX-SDC"/>
                                                             <constraint firstAttribute="width" constant="36" id="qyy-N0-N64"/>
@@ -962,17 +1007,17 @@ as a beneficiary</string>
                                                 <edgeInsets key="layoutMargins" top="10" left="16" bottom="10" right="16"/>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OlU-Pi-0ry">
-                                                <rect key="frame" x="0.0" y="426.5" width="375" height="50"/>
+                                                <rect key="frame" x="0.0" y="426.5" width="343" height="50"/>
                                                 <color key="backgroundColor" red="0.12941176469999999" green="0.75686274509999996" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="xtc-nD-9tZ"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UcV-MN-Zb7">
-                                                <rect key="frame" x="0.0" y="476.5" width="375" height="40"/>
+                                                <rect key="frame" x="0.0" y="476.5" width="343" height="40"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tpd-Sq-7Fj">
-                                                        <rect key="frame" x="20" y="13" width="335" height="14.5"/>
+                                                        <rect key="frame" x="20" y="13" width="303" height="14.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                         <color key="textColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -987,10 +1032,10 @@ as a beneficiary</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JZe-LZ-gEN">
-                                                <rect key="frame" x="0.0" y="516.5" width="375" height="20"/>
+                                                <rect key="frame" x="0.0" y="516.5" width="343" height="20"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mfz-oc-pPQ">
-                                                        <rect key="frame" x="0.0" y="10" width="375" height="10"/>
+                                                        <rect key="frame" x="0.0" y="10" width="343" height="10"/>
                                                         <color key="backgroundColor" red="0.0039215686269999999" green="0.16862745100000001" blue="0.44705882349999998" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="10" id="FVg-oT-vNy"/>
@@ -1010,8 +1055,8 @@ as a beneficiary</string>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="84x-lP-Jhy" secondAttribute="trailing" id="0bv-oI-5dV"/>
-                                    <constraint firstItem="84x-lP-Jhy" firstAttribute="leading" secondItem="mKm-6k-HLI" secondAttribute="leading" id="3hI-dm-ijX"/>
+                                    <constraint firstAttribute="trailing" secondItem="84x-lP-Jhy" secondAttribute="trailing" constant="16" id="0bv-oI-5dV"/>
+                                    <constraint firstItem="84x-lP-Jhy" firstAttribute="leading" secondItem="mKm-6k-HLI" secondAttribute="leading" constant="16" id="3hI-dm-ijX"/>
                                     <constraint firstItem="84x-lP-Jhy" firstAttribute="top" secondItem="mKm-6k-HLI" secondAttribute="top" constant="20" id="6mH-Gs-Q80"/>
                                     <constraint firstAttribute="bottom" secondItem="84x-lP-Jhy" secondAttribute="bottom" id="ThI-Zx-XlK"/>
                                 </constraints>
@@ -1033,7 +1078,7 @@ as a beneficiary</string>
         <!--Beneficiary Response Popup-->
         <scene sceneID="snC-jO-0Nr">
             <objects>
-                <viewController id="5gm-gy-Jaj" customClass="P2PBeneficiaryResponsePopup" customModule="Practice_Swift_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="P2PBeneficiaryResponsePopup" id="5gm-gy-Jaj" customClass="P2PBeneficiaryResponsePopup" customModule="Practice_Swift_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Trc-NY-mOg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

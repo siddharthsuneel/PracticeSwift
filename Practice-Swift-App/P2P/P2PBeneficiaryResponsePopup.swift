@@ -8,24 +8,8 @@
 
 import UIKit
 
-enum UPIBeneficiaryResponsePopupType {
-    case none
-    case processing
-    case success
-    case failed        
-    
-    func getHeaderImage() ->  UIImage {
-        switch self {
-        case .processing:
-            return UIImage()
-        default:
-            return UIImage()
-        }
-    }
-}
-
 protocol P2PBeneficiaryResponsePopupDelegate: class {
-    func didTappedActionButton(forPopupType type: UPIBeneficiaryResponsePopupType)
+    func didTappedActionButton(forPopupType type: P2PBeneficiaryPopupType)
 }
 
 class P2PBeneficiaryResponsePopup: UIViewController {
@@ -44,8 +28,15 @@ class P2PBeneficiaryResponsePopup: UIViewController {
     @IBOutlet weak var footerButton: UIButton!
     
     //Variable
-    var popupType: UPIBeneficiaryResponsePopupType = .none
+    var popupType: P2PBeneficiaryPopupType = .none
     weak var delegate: P2PBeneficiaryResponsePopupDelegate?
+    
+    class var p2pStoryboard: UIStoryboard {
+        get { return UIStoryboard(name: "P2P", bundle: nil) }
+    }
+    class var newInstance: P2PBeneficiaryResponsePopup {
+        return  P2PBeneficiaryResponsePopup.p2pStoryboard.instantiateViewController(withIdentifier: "P2PBeneficiaryResponsePopup") as! P2PBeneficiaryResponsePopup
+    }
     
     //MARK: Lifecycle Methods
     override func viewDidLoad() {

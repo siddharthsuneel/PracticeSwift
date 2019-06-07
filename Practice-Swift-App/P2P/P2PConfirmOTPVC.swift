@@ -23,6 +23,13 @@ class P2PConfirmOTPVC: UIViewController {
     
     @IBOutlet var textfieldArray: [UITextField]!
     
+    class var p2pStoryboard: UIStoryboard {
+        get { return UIStoryboard(name: "P2P", bundle: nil) }
+    }
+    class var newInstance: P2PConfirmOTPVC {
+        return  P2PConfirmOTPVC.p2pStoryboard.instantiateViewController(withIdentifier: "P2PConfirmOTPVC") as! P2PConfirmOTPVC
+    }
+    
     //MARK: Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,7 +75,8 @@ class P2PConfirmOTPVC: UIViewController {
     }
     
     @IBAction func confirmButtonAction(_ sender: Any) {
-        
+        let vc = P2PBeneficiaryResponsePopup.newInstance
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func resendButtonAction(_ sender: Any) {
